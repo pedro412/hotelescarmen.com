@@ -1,0 +1,58 @@
+---
+// export interface Props {
+//   title: string;
+//   body: string;
+//   href: string;
+// }
+
+// const { href, title, body } = Astro.props;
+---
+
+<nav>
+  <div class="logo">
+    <img src="logo.png" alt="Cd. del Carmen" />
+  </div>
+  <ul class="menu">
+    <li>
+      <a href="#quienes-somos">Quienes somos</a>
+    </li>
+    <li>
+      <a href="#contacto">Contacto</a>
+    </li>
+    <li>
+      <a href="#beneficios">Beneficios</a>
+    </li>
+    <li>
+      <a href="#mesa-directiva">Mesa directiva</a>
+    </li>
+  </ul>
+</nav>
+<style>
+  nav {
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  .logo > img {
+    max-width: 150px;
+  }
+
+  .menu {
+    list-style: none;
+    display: flex;
+  }
+
+  .menu > li {
+    margin: 0 20px;
+  }
+
+  .menu > li > a {
+    font-size: 18px;
+    color: #2e97bb;
+    font-weight: bold;
+  }
+</style>

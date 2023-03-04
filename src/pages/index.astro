@@ -1,80 +1,235 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
 ---
 
-<Layout title="Hoteles Ciudad del Carmen">
-	<main>
-		<h1>Bienvenidos a <span class="text-gradient">Hoteles Ciudad del Carmen</span></h1>
-		<p class="instructions">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vero dicta esse quae natus asperiores eum? Quod commodi soluta fugit.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
+<Layout title="Hoteles Cd. del Carmen">
+  <Navbar />
+  <main>
+    <div class="hero"></div>
+    <section id="quienes-somos">
+      <h3>Quienes somos</h3>
+      <p>
+        Somos la Asociación Mexicana de Hoteles y Moteles con sede en Ciudad del
+        Carmen, Campeche, fundada en el año 1987, con el objetivo de fomentar
+        una red de hoteles que cooperan y se ayudan entre sí, para fomentar
+        actividades turísticas que generen bienestar y economía en nuestra
+        comunidad.
+      </p>
+    </section>
+    <section id="contacto">
+      <h3>Contacto</h3>
+      <div>
+        <p>
+          Nos ubicamos en calle caballito de mar, sin número, entre calle 38 y
+          40, colonia playa norte, Ciudad del Carmen, Campeche C.P. 24115
+        </p>
+        <p>
+          Referencia estamos dentro del Edificio del Consejo Coordinador
+          Empresarial
+        </p>
+        <p><strong>Horario de atención</strong></p>
+        <p>Lunes a viernes de 9:00 a 17:00 horas</p>
+        <p>
+          <strong>Teléfonos de contacto:</strong>
+        </p>
+        <ul>
+          <li>938 400 8376</li>
+          <li>938 164 4517</li>
+          <li>938 103 3097</li>
+        </ul>
+        <p>
+          Facebook: Asociación Mexicana de Hoteles y Moteles de Ciudad del
+          Carmen A.C.
+        </p>
+      </div>
+    </section>
+    <section id="beneficios">
+      <h3>Beneficios para socios</h3>
+      <p>
+        Accede a los siguientes beneficios al formar parte de la Asociación
+        Mexicana de Hoteles y Moteles de Carmen, A.C.
+      </p>
+      <p><strong>Atención a socios</strong></p>
+      <ul>
+        <li>
+          Vinculación con la Asociación Mexicana de Hoteles y Moteles (AMHM)
+          Nacional.
+        </li>
+        <li>
+          Difusión de noticias, boletines, nuevos reglamentos, disposiciones,
+          leyes y eventos de interés.
+        </li>
+        <li>
+          Facilitar el intercambio de experiencias entre los colegas hoteleros.
+        </li>
+        <li>
+          Facilitar las alianzas estratégicas entre los diversos
+          establecimientos de hospedaje.
+        </li>
+        <li>Asesoría legal y gestión en trámites gubernamentales.</li>
+      </ul>
+      <p><strong>Desarrollo y seguimiento de proyectos</strong></p>
+      <ul>
+        <li>
+          Desarrollo de proyectos para los hoteleros, a través de los diferentes
+          apoyos de financiamientos federales, estatales e Internacionales.
+        </li>
+        <li>
+          Envió de información oportuna sobre los diversos programas que ejecuta
+          el gobierno para el apoyo a las empresas.
+        </li>
+      </ul>
+      <p><strong>Programa de capacitación</strong></p>
+      <p>
+        Participación en el Programa Anual de Capacitación con los temas de
+        Interés de la hotelería organizada, por señalar algunos:
+      </p>
+      <ul>
+        <li>Hospitalidad en el servicio turístico</li>
+        <li>Enfoque de la calidad basado en el valor del servicio</li>
+        <li>Técnicas de comunicación en el servicio turístico</li>
+        <li>Estrategias de servicio turístico</li>
+        <li>Cursos de idiomas</li>
+      </ul>
+      <p><strong>Promoción turística</strong></p>
+      <ul>
+        <li>
+          Participación en las campañas de publicidad de la AMHMT, para dar a
+          conocer los paquetes, promociones, tarifas y descuentos de los socios
+          afiliados, así como difusión en página web y redes sociales.
+        </li>
+        <li>
+          Coordinación y publicidad de tarifas hoteleras para diversos eventos y
+          temporalidades.
+        </li>
+      </ul>
+      <p><strong>Beneficios</strong></p>
+      <p>
+        Al pertenecer a la Asociación Mexicana de Hoteles y Moteles A.C., cada
+        Socio Activo tiene derecho a una serie de servicios, los cuales son muy
+        diversos, desde recepción de información y asesorías, hasta guías de
+        cumplimiento de normatividades e información relativa a distintas
+        autoridades relacionadas con la actividad turística y hotelera.
+      </p>
+      <p>
+        Estos son los principales servicios disponibles para los Socios Activos
+        de la Asociación Mexicana de Hoteles y Moteles A.C.
+      </p>
+      <p><strong>Asesoría Jurídica</strong></p>
+      <p>
+        El Despacho Villar & Brisom S.C. es quien proporciona todo tipo de
+        asesoría legal especializada para el sector turístico y hotelero, se
+        hace énfasis en las recomendaciones sobre el tema de Derechos de Autor
+        (SACM, Lysa, ANDI, etc); sin olvidar todos los temas que afectan en
+        forma directa o indirecta a la operación de los establecimientos de
+        hospedaje.
+      </p>
+      <p><strong>Normatividad Hotelera</strong></p>
+      <p>
+        Los establecimientos de hospedaje están sujetos al cumplimiento de
+        leyes, normas y reglamentos para su legal funcionamiento, razón
+        suficiente para informar sobre los requisitos que deben cubrir nuestros
+        Socios Activos.
+      </p>
+      <p><strong>Guías de Cumplimiento</strong></p>
+      <p>
+        Como parte de los servicios de la Asociación, emitimos guías específicas
+        para el cumplimiento de NOM’s (Normas Oficiales Mexicanas),
+        específicamente las relacionadas con la Secretaría de Turismo, así como
+        de la Secretaría del Trabajo y Previsión Social; por otra parte,
+        comunicamos la forma adecuada para cumplir con el Registro Nacional de
+        Turismo. Los contratos de adhesión de salones de eventos, tintorería y
+        estacionamiento representan otra obligatoriedad ante PROFECO, sobre este
+        tema también generamos las guías de cumplimiento.
+      </p>
+    </section>
+    <section id="mesa-directiva">
+      <h3>Conoce nuestra mesa directiva periodo 2022-2024</h3>
+      <div class="text-center">
+        <p><strong>Presidenta:</strong> Lic. Olimpia Alvarez Casanova</p>
+        <p>
+          <strong>Vicepresidenta:</strong> Profa. Ileana Jeanette Pérez Aguilar
+        </p>
+        <p><strong>Tesorera:</strong> Zulema Elizabeth Lara Burgos</p>
+        <p><strong>Secretario:</strong> Arq. José Daniel Marín Gordillo</p>
+        <p><strong>Vocal 1:</strong> Cesar Brabata Rondanini</p>
+        <p><strong>Vocal 2:</strong> C.P. Elia Isabel Centella Hernández</p>
+        <p><strong>Vocal 3:</strong> Thelma Espinosa Domínguez</p>
+        <p><strong>Vocal 4:</strong> Ignacio Nicandro Miguel Anlehu</p>
+        <p><strong>Vocal 5:</strong> Ana Carmen Ongay Reyes</p>
+      </div>
+    </section>
+    <section>
+      <h3>Actividades turísticas para realizar en Ciudad del Carmen:</h3>
+      <p>
+        Nuestra Isla es famosa por su industria petrolera sin embargo tenemos
+        grandes atractivos turísticos naturales y una excelente gastronomía que
+        te invitamos a conocer.
+      </p>
+      <p>
+        Conoce nuestro bello malecón del centro con su Estela Maris, y disfruta
+        de una exquisita cena tradicional en sus distintos restaurantes en la
+        zona del malecón, así como en el mercado Alonso Felipe Andrade, donde
+        puedes degustar de un coctel de camaron fresco, o una cochinita y como
+        se come Ciudad del Carmen, con su milo.
+      </p>
+      <p>
+        Conoce nuestro malecón costero en la zona de playa norte, donde puedes
+        disfrutar de la playa, y su distinta variedad de restaurantes de
+        mariscos en la zona
+      </p>
+      <p>
+        Conoce nuestras playas: Playa norte, playa caracol, bahamita, punta San
+        Julian, y punta Esmeralda.
+      </p>
+      <p>
+        Conoce nuestras comunidades donde puedes hacer actividades eco
+        turísticas: Isla Aguada, sus playas, el paseo en lancha para observar
+        delfines y aves. Atasta, el paseo en la laguna de términos y su fauna
+        del manglar. Sabancuy, sus playas, actividades de kayak.
+      </p>
+    </section>
+  </main>
 </Layout>
-
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+  .hero {
+    max-width: 100%;
+    height: 400px;
+    background-image: url("hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  section {
+    padding: 50px 0;
+    max-width: 1024px;
+    margin: auto;
+  }
+
+  h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #2e97bb;
+  }
+
+  section p {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .delfines {
+    width: 100%;
+    height: 400px;
+    background-image: url("delfines.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 </style>
