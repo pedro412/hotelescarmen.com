@@ -10,6 +10,7 @@
 		"astro": "astro"
 	},
 	"dependencies": {
+		"@fontsource/lora": "^4.5.13",
 		"astro": "^2.0.15"
 	}
 }
