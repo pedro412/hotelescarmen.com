@@ -15,8 +15,33 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href="https://hotelescarmen.com" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Asociación de hoteles y moteles de Ciudad del Carmen"
+    />
+    <meta
+      property="og:description"
+      content="Accede a los siguientes beneficios al formar parte de la Asociación Mexicana de Hoteles y Moteles de Carmen, A.C."
+    />
+    <meta property="og:image" content="https://hotelescarmen.com/hero.jpg" />
+    <meta property="og:url" content="permalink" />
     <title>{title}</title>
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-96DKWNCTSL"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-96DKWNCTSL");
+  </script>
   <body>
     <slot />
   </body>
