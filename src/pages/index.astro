@@ -1,13 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Navbar from "../components/Navbar.astro";
 ---
 
-<Layout title="Hoteles Cd. del Carmen">
-  <Navbar />
+<Layout title="Hoteles Ciudad del Carmen">
   <main>
     <div class="hero"></div>
-
     <section id="quienes-somos">
       <h3>Quienes somos</h3>
       <p>
@@ -202,24 +199,6 @@ import Navbar from "../components/Navbar.astro";
     background-size: cover;
   }
 
-  section {
-    padding: 50px 0;
-    max-width: 1024px;
-    margin: auto;
-  }
-
-  h3 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 30px;
-    color: #2e97bb;
-  }
-
-  section p {
-    margin-bottom: 20px;
-    font-size: 18px;
-  }
-
   ul {
     margin-bottom: 30px;
   }
@@ -228,11 +207,5 @@ import Navbar from "../components/Navbar.astro";
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  @media only screen and (max-width: 900px) {
-    section {
-      padding: 30px;
-    }
   }
 </style>

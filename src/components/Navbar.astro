@@ -1,29 +1,24 @@
----
-// export interface Props {
-//   title: string;
-//   body: string;
-//   href: string;
-// }
-
-// const { href, title, body } = Astro.props;
----
-
 <nav>
   <div class="logo">
-    <img src="logo.png" alt="Cd. del Carmen" />
+    <a href="/">
+      <img src="logo.png" alt="Cd. del Carmen" />
+    </a>
   </div>
   <ul class="menu">
     <li class="menu-item">
-      <a href="#quienes-somos">Quienes somos</a>
+      <a href="/hoteles">Hoteles</a>
     </li>
     <li class="menu-item">
-      <a href="#contacto">Contacto</a>
+      <a href="/#quienes-somos">Quienes somos</a>
     </li>
     <li class="menu-item">
-      <a href="#beneficios">Beneficios</a>
+      <a href="/#contacto">Contacto</a>
     </li>
     <li class="menu-item">
-      <a href="#mesa-directiva">Mesa directiva</a>
+      <a href="/#beneficios">Beneficios</a>
+    </li>
+    <li class="menu-item">
+      <a href="/#mesa-directiva">Mesa directiva</a>
     </li>
     <li>
       <a target="_blank" href="https://www.facebook.com/amhmciudaddelcarmen/">
@@ -50,7 +45,7 @@
     padding: 10px 0;
   }
 
-  .logo > img {
+  .logo img {
     max-width: 200px;
   }
 
@@ -61,7 +56,7 @@
   }
 
   .menu > li {
-    margin: 0 20px;
+    margin: 0 12px;
   }
 
   .menu > li > a {
