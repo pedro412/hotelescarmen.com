@@ -1,10 +1,14 @@
-<nav>
+---
+import menu from "/menu.svg";
+---
+
+<nav class="nav">
   <div class="logo">
     <a href="/">
       <img src="/logo.png" alt="Cd. del Carmen" />
     </a>
   </div>
-  <ul class="menu">
+  <ul class="menu" id="menu">
     <li class="menu-item">
       <a href="/hoteles">Hoteles</a>
     </li>
@@ -20,7 +24,7 @@
     <li class="menu-item">
       <a href="/#mesa-directiva">Mesa directiva</a>
     </li>
-    <li>
+    <li class="menu-item">
       <a target="_blank" href="https://www.facebook.com/amhmciudaddelcarmen/">
         <svg
           class="social"
@@ -34,6 +38,9 @@
       </a>
     </li>
   </ul>
+  <button class="menu-button" id="menu-button">
+    <img width="40" height="40" src={menu} alt="menu" />
+  </button>
 </nav>
 <style>
   nav {
@@ -65,13 +72,46 @@
     font-weight: 600;
   }
 
+  .menu-button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+    border: none;
+    display: none;
+  }
+
   @media only screen and (max-width: 900px) {
     nav {
       padding: 15px 30px;
     }
 
-    .menu-item {
+    .menu {
       display: none;
+    }
+
+    .menu-item {
+      margin: 12px !important;
+    }
+
+    .menu-button {
+      display: block;
     }
   }
 </style>
+
+<script>
+  const menuButton = document.getElementById("menu-button");
+  const menu = document.getElementById("menu");
+
+  menuButton.addEventListener("click", () => {
+    console.log(menu.style.display);
+    if (menu.style.display !== "block") {
+      menu.style.display = "block";
+    } else {
+      menu.style.display = "none";
+    }
+  });
+</script>
